@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "noImplicitReturns": true,
+    "useUnknownInCatchVariables": true
+  },
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "compile": "deno compile --unstable --allow-read --allow-write --allow-net --allow-env --allow-run --import-map=import_map.json --target=x86_64-unknown-linux-gnu --output=bin/main src/main.ts"
+  },
+  "lint": {
+    "include": [
+      "src/"
+    ],
+    "rules": {
+      "tags": [
+        "recommended"
+      ]
+    }
+  },
+  "fmt": {
+    "useTabs": true,
+    "lineWidth": 120,
+    "indentWidth": 4,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": [
+      "src/"
+    ],
+    "exclude": [
+      "src/testdata/",
+      "data/fixtures/**/*.ts"
+    ]
+  },
+  "imports": {
+    "/": "./src/"
+  }
+}

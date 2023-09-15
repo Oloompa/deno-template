@@ -1,2 +1,28 @@
 # deno-template
-experimentations on deno
+
+Let's use Deno !
+
+## Setup
+
+### Deno
+
+Install with `curl -fsSL https://deno.land/x/install/install.sh | sh`.
+Update using `deno upgrade`.
+Read the [doc](https://docs.deno.com/runtime/manual/getting_started/).
+Check the standard [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API).
+Check the [Deno Runtime API](https://deno.land/api).
+Check the [examples](https://examples.deno.land/).
+
+## Basic commands
+
+deno run first_steps.ts
+
+| Action  | Command                    |
+| ------- | -------------------------- |
+| Dev     | `deno run --watch main.ts` |
+| Start   | `deno run main.ts`         |
+| Test    | `deno test -h`             |
+| Compile | `deno compile -h`          |
+| Format  | `deno fmt -h`              |
+
+continue [there](https://docs.deno.com/runtime/manual/getting_started/command_line_interface#watch-mode)

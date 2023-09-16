@@ -28,4 +28,4 @@ deno run first_steps.ts
 | Lint          | `deno lint -h`                            |
 | Type checking | `deno check --all maint.ts`               |
 
-continue [there](https://docs.deno.com/runtime/manual/basics/debugging_your_code#vscode)
+continue [there](https://docs.deno.com/runtime/manual/basics/modules/)
